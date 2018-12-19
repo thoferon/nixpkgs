@@ -10,13 +10,13 @@
 
 buildPythonPackage rec {
   pname = "astroquery";
-  version = "0.3.8";
+  version = "0.3.9";
 
   doCheck = false; # Tests require the pytest-astropy package
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "800d9730c9e2bd299f14c29b4d709d1605c82833223a2e4f784fea7ad805c168";
+    sha256 = "2b4bcc02c719061d8391599e25dd3af75b07fff61ac764ca16d03097c5ed837f";
   };
 
   propagatedBuildInputs = [ astropy requests keyring beautifulsoup4 html5lib ];
