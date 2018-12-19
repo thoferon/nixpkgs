@@ -1,12 +1,12 @@
 { stdenv, buildPythonPackage, fetchPypi, pytest, six, mock }:
 
 buildPythonPackage rec {
-  version = "1.4.3";
+  version = "1.4.4";
   pname = "kafka-python";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "078acdcd1fc6eddacc46d437c664998b4cf7613b7e79ced66a460965f2648f88";
+    sha256 = "2014bbbe618f3224e68b07cf9b44c702b28913c551e6f63246bf9b4477ca3add";
   };
 
   checkInputs = [ pytest six mock ];
