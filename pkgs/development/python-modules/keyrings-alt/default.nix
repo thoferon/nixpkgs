@@ -4,11 +4,11 @@
 
 buildPythonPackage rec {
   pname = "keyrings.alt";
-  version = "3.1";
+  version = "3.1.1";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "0nnva8g03dv6gdhjk1ihn2qw7g15232fyj8shipah9whgfv8d75m";
+    sha256 = "0bc7b75c7e710a3dd7bc4c3841c71467b24ccbce1b85efb2586bdf0c4713f751";
   };
 
   postPatch = ''
