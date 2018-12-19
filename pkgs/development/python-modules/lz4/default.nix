@@ -10,11 +10,11 @@
 
 buildPythonPackage rec {
   pname = "lz4";
-  version = "2.1.2";
+  version = "2.1.5";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "ec265f7c3fc3df706e9579bde632ceeef9278858d7ae87c376a2954d11e9ea39";
+    sha256 = "d2733ab8d59708acfd2c576b5a8b1a9478a578703c91adb77cabf23ff0ce61b4";
   };
 
   buildInputs = [ setuptools_scm pytestrunner pkgconfig ];
