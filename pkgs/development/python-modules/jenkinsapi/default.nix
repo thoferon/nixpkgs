@@ -11,11 +11,11 @@
 
 buildPythonPackage rec {
   pname = "jenkinsapi";
-  version = "0.3.6";
+  version = "0.3.7";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "c46d231111fd661b733d417976e30a69f4e7fe6a8499bd59b4b3ea2a2504898c";
+    sha256 = "e7558d338d8461d8b601321f95ef5119d6a2eda79b3f8b0f5205e3f7693608fd";
   };
 
   propagatedBuildInputs = [ pytz requests ];
