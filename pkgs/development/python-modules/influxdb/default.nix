@@ -9,11 +9,11 @@
 
 buildPythonPackage rec {
   pname = "influxdb";
-  version = "5.2.0";
+  version = "5.2.1";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "0fqnshmsgifvp79pd4g9a1kyfxvpa9vczv0dv8x2jr2c5m1mi99v";
+    sha256 = "75d96de25d0d4e9e66e155f64dc9dc2a48de74ac4e77e3a46ad881fba772e3b6";
   };
 
   # ImportError: No module named tests
