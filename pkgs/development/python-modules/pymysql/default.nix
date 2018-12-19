@@ -6,11 +6,11 @@
 
 buildPythonPackage rec {
   pname = "PyMySQL";
-  version = "0.9.2";
+  version = "0.9.3";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "0gvi63f1zq1bbd30x28kqyx351hal1yc323ckp0mihainb5n1iwy";
+    sha256 = "d8c059dcd81dedb85a9f034d5e22dcb4442c0b201908bede99e306d65ea7c8e7";
   };
 
   propagatedBuildInputs = [ cryptography ];
