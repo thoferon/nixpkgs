@@ -4,12 +4,12 @@
 with stdenv.lib;
 
 buildPythonPackage rec {
-  version = "3.1.4";
+  version = "3.1.5";
   pname = "bcrypt";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "67ed1a374c9155ec0840214ce804616de49c3df9c5bc66740687c1c9b1cd9e8d";
+    sha256 = "136243dc44e5bab9b61206bd46fff3018bd80980b1a1dfbab64a22ff5745957f";
   };
   buildInputs = [ pycparser mock pytest py ];
   propagatedBuildInputs = [ six ] ++ optional (!isPyPy) cffi;
