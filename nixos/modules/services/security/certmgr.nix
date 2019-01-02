@@ -90,6 +90,9 @@ in
             mode = "0600";
             path = secret "''${domain}-key";
           };
+          bundle = {
+            path = secret "''${domain}-bundle";
+          };
           request = {
             CN = domain;
             hosts = [ "mail.''${domain}" "www.''${domain}" ];
@@ -134,6 +137,11 @@ in
           private_key = mkOption {
             type = nullOr attrs;
             description = "certmgr spec private_key object.";
+          };
+
+          bundle = mkOption {
+            type = nullOr attrs;
+            description = "certmgr spec bundle object.";
           };
 
           request = mkOption {
